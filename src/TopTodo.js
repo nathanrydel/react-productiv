@@ -13,7 +13,7 @@ import Todo from "./Todo";
 function TopTodo({ todos }) {
   // lowest-priority # is the highest priority
   const top = todos.reduce(
-      (acc, cur) => cur.priority < acc.priority ? cur : acc, todos[0]);
+    (acc, cur) => cur.priority < acc.priority ? cur : acc, todos[0]);
 
   // TODO: does this work?
   return <Todo todo={top} />;
