@@ -5,7 +5,7 @@ import TodoForm from "./TodoForm";
 /** Show editable todo item.
  *
  * Props
- * - todo
+ * - todo: Todo
  * - update(): fn to call to update a todo
  * - remove(): fn to call to remove a todo
  *
