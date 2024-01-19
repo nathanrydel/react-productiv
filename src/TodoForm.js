@@ -32,7 +32,7 @@ function TodoForm({ initialFormData, handleSave }) {
     evt.preventDefault();
     handleSave(formData);
     setFormData({ title: "", description: "", priority: 1 });
-  }
+  } // TODO: priority type num instead of type str here ^
 
   return (
     <form className="NewTodoForm" onSubmit={handleSubmit}>
