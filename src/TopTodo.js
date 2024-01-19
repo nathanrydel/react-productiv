@@ -10,12 +10,13 @@ import Todo from "./Todo";
  * TodoApp -> TopTodo
  */
 
-function TopTodo() {
+function TopTodo({ todos }) {
   // lowest-priority # is the highest priority
-  // let top = todos.reduce(
-  //     (acc, cur) => cur.priority < acc.priority ? cur : acc, todos[0]);
+  const top = todos.reduce(
+      (acc, cur) => cur.priority < acc.priority ? cur : acc, todos[0]);
 
-  return <Todo  />;
+  // TODO: does this work?
+  return <Todo {...top} />;
 }
 
 export default TopTodo;
