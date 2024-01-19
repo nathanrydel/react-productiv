@@ -9,6 +9,7 @@ import React from "react";
  **/
 
 function Todo({ todo }) {
+  console.log("Todo renders: ", todo)
   return (
     <div className="Todo" id={todo.id}>
       <div><b>{todo.title}</b> <small>Priority: {todo.priority}</small></div>
