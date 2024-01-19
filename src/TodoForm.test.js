@@ -11,29 +11,33 @@ describe("TodoForm smoke test", function () {
   });
 });
 
-describe("TodoForm submitting valid input", function () {
-  test("submits valid input", function () {
-    const result = render(<TodoForm handleSave={handleSave} />)
+describe("TodoForm DOM changes and submit event testing", function () {
+  test("Changing form inputs updates the DOM",
+    function () {
+      const result = render(<TodoForm handleSave={handleSave} />);
 
-    const titleInput = result.getByPlaceholderText("Title");
-    const descriptionInput = result.getByPlaceholderText("Description");
-    const priorityInput = result.getByPlaceholderText("Ultra-Über");
-    const submitBtn = result.querySelector(".NewTodoForm-addBtn");
+      const titleInput = result.getByPlaceholderText("Title");
+      const descriptionInput = result.getByPlaceholderText("Description");
+      const priorityInput = result.getByLabelText("Priority:");
 
-    fireEvent.change(titleInput, { target: { value: "Test1 Title"}});
-    fireEvent.change(descriptionInput, { target: { value: "Test descr"}});
-    fireEvent.change(priorityInput, { target: { value: "Meh"}});
-    fireEvent.click(submitBtn);
+      expect(titleInput).toHaveValue("")
+      fireEvent.change(titleInput, { target: { value: "Test1 Title" } });
+      expect(titleInput).toHaveValue("Test1 Title")
 
-    expect(handleSave).toBeCalledTimes(1);
-  });
+      expect(descriptionInput).toHaveValue("")
+      fireEvent.change(descriptionInput, { target: { value: "Test descr" } });
+      expect(descriptionInput).toHaveValue("Test descr")
+
+      expect(priorityInput).toHaveValue("1")
+      fireEvent.change(priorityInput, { target: { value: 3 } });
+      expect(priorityInput).toHaveValue("3")
+    });
+
+    test("Clicking Gø! submits the TodoForm", function () {
+      const result = render(<TodoForm handleSave={handleSave} />);
+      const submitBtn = result.getByText("Gø!");
+      fireEvent.click(submitBtn);
+      expect(handleSave).toBeCalledTimes(1);
+
+    })
 });
-
-
-// TodoApp snapshot
-// describe("TodoForm smoke test", function () {
-//   test("it renders without crashing", function () {
-//     const { container, debug } = render(<TodoForm handleSave={handleSave} />);
-//     expect(container).toMatchSnapshot();
-//   });
-// });
