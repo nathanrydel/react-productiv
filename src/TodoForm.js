@@ -9,7 +9,7 @@ const defaultFormData = { title: "", description: "", priority: 1 };
  * - handleSave: function to call in parent.
  *
  * State:
- * - formData
+ * - formData: title, description, priority fields
  *
  * { TodoApp, EditableTodo } -> TodoForm
  */
@@ -20,7 +20,6 @@ function TodoForm({ initialFormData = defaultFormData, handleSave }) {
   console.log("TodoForm renders: ", formData);
 
   /** Update form input. */
-  // TODO: handle the formData being a string, but priority expecting a number
   function handleChange(evt) {
     const change = evt.target;
     setFormData(fData => ({
@@ -34,7 +33,7 @@ function TodoForm({ initialFormData = defaultFormData, handleSave }) {
     evt.preventDefault();
     handleSave(formData);
     setFormData({ title: "", description: "", priority: 1 });
-  } // TODO: priority type num instead of type str here ^
+  }
 
   return (
     <form className="NewTodoForm" onSubmit={handleSubmit}>
