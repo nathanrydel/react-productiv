@@ -40,7 +40,6 @@ describe("Rendering TodoApp with content", function () {
 // Renders Todos area with message You have no todos and TopTodo with No todos yet!
 // Snapshot of No Todos
 
-
 describe("Rendering ToDoApp with no content", function () {
   tests("Todos area without todos", function () {
     const result = render(<TodoApp initialTodos={[]}/>);
@@ -60,6 +59,3 @@ describe("Rendering ToDoApp with no content", function () {
     expect(result).toMatchSnapshot();
   });
 });
-
-
-
