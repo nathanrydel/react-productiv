@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 const defaultFormData = { title: "", description: "", priority: 1 };
+// TODO: repeating in line 36
+// TODO: global constant, screaming case
 
 /** Form for adding.
  *
@@ -22,6 +24,11 @@ function TodoForm({ initialFormData = defaultFormData, handleSave }) {
   /** Update form input. */
   function handleChange(evt) {
     const change = evt.target;
+    // TODO: "field", "fieldName", "fieldToChange" for better var name
+
+    // TODO: if change === priority, then coerce to Number
+    // or have different fn "handleNumChange"
+    // the sooner you can coerce priority to num type, the better
     setFormData(fData => ({
       ...fData,
       [change.name]: change.value
