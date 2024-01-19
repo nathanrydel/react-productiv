@@ -12,6 +12,8 @@ import EditableTodo from "./EditableTodo";
  */
 
 function EditableTodoList({todos, update, remove }) {
+  console.log("EditableTodoList renders")
+
   return (
       todos.map(todo => (
         <EditableTodo
