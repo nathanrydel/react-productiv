@@ -17,7 +17,7 @@ function EditableTodo({ todo, update, remove }) {
 
   /** Toggle if this is being edited */
   function toggleEdit() {
-    setIsEditing(curr => !curr);
+    setIsEditing(editable => !editable);
   }
 
   /** Call remove fn passed to this. */
