@@ -5,7 +5,7 @@ import Todo from "./Todo";
 /** Shows the top todo.
  *
  * Props:
- * - todos
+ * - todos: [{ id, title, description, priority }]
  *
  * TodoApp -> TopTodo
  */

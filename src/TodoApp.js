@@ -8,10 +8,10 @@ import EditableTodoList from "./EditableTodoList";
 /** App for managing a todo list.
  *
  * Props:
- * - initialTodos: possible array of [ todo, ... ]
+ * - initialTodos - [ {id, title, description, priority }, ...]
  *
  * State:
- * - todos: array of [ todo, ... ]
+ * - todos - [ {id, title, description, priority }, ...]
  *
  * App -> TodoApp -> { TodoForm, EditableTodoList }
  */

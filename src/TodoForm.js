@@ -17,7 +17,7 @@ const defaultFormData = { title: "", description: "", priority: 1 };
 function TodoForm({ initialFormData = defaultFormData, handleSave }) {
   const [formData, setFormData] = useState(initialFormData);
 
-  console.log("TodoForm renders: ", formData, initialFormData);
+  console.log("TodoForm renders: ", formData);
 
   /** Update form input. */
   // TODO: handle the formData being a string, but priority expecting a number
