@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const DEFAULTFORMDATA = { title: "", description: "", priority: 1 };
+const DEFAULT_FORM_DATA = { title: "", description: "", priority: 1 };
 
 /** Form for adding.
  *
@@ -33,7 +33,7 @@ function TodoForm({ initialFormData = defaultFormData, handleSave }) {
   function handleSubmit(evt) {
     evt.preventDefault();
     handleSave(formData);
-    setFormData(DEFAULTFORMDATA);
+    setFormData(DEFAULT_FORM_DATA);
   }
 
   return (
