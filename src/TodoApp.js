@@ -42,8 +42,8 @@ function TodoApp({ initialTodos }) {
   return (
     <main className="TodoApp">
       <div className="row">
-
         <div className="col-md-6">
+        <h3 className="mb-3">Todos</h3>
           {todos.length > 0 &&
             <EditableTodoList
               todos={todos}
@@ -60,7 +60,6 @@ function TodoApp({ initialTodos }) {
         </div>
 
         <div className="col-md-6">
-          (if no top todo, omit this whole section)
           {todos.length > 0 &&
             <section className="mb-4">
               <h3>Top Todo</h3>
