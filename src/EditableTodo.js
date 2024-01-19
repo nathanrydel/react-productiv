@@ -4,10 +4,13 @@ import TodoForm from "./TodoForm";
 
 /** Show editable todo item.
  *
- * Props
+ * Props:
  * - todo: {id, title, description, priority }
  * - update(): fn to call to update a todo
  * - remove(): fn to call to remove a todo
+ *
+ * TODO: add state
+ *
  *
  * EditableTodoList -> EditableTodo -> { Todo, TodoForm }
  */
