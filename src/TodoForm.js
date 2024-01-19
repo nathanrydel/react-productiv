@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Todo from "./Todo";
 
+const defaultFormData = { title: "", description: "", priority: 1 };
 
 /** Form for adding.
  *
@@ -14,8 +14,10 @@ import Todo from "./Todo";
  * { TodoApp, EditableTodo } -> TodoForm
  */
 
-function TodoForm({ initialFormData, handleSave }) {
+function TodoForm({ initialFormData = defaultFormData, handleSave }) {
   const [formData, setFormData] = useState(initialFormData);
+
+  console.log("TodoForm renders: ", formData, initialFormData);
 
   /** Update form input. */
   // TODO: handle the formData being a string, but priority expecting a number
