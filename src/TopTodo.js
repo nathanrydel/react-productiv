@@ -16,7 +16,7 @@ function TopTodo({ todos }) {
       (acc, cur) => cur.priority < acc.priority ? cur : acc, todos[0]);
 
   // TODO: does this work?
-  return <Todo {...top} />;
+  return <Todo todo={top} />;
 }
 
 export default TopTodo;
