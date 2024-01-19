@@ -1,0 +1,560 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering TodoApp with content matches snapshot of correct result 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <main
+        class="TodoApp"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-6"
+          >
+            <h3
+              class="mb-3"
+            >
+              Todos
+            </h3>
+            <div
+              class="EditableTodo"
+            >
+              <div
+                class="mb-3"
+              >
+                <div
+                  class="float-end text-sm-end"
+                >
+                  <button
+                    class="EditableTodo-toggle btn-link btn btn-sm"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
+                  >
+                    Del
+                  </button>
+                </div>
+                <div
+                  class="Todo"
+                  id="1"
+                >
+                  <div>
+                    <b>
+                      Test1
+                    </b>
+
+                    <small>
+                      Priority:
+                      1
+                    </small>
+                  </div>
+                  <div>
+                    <small>
+                      desc
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="EditableTodo"
+            >
+              <div
+                class="mb-3"
+              >
+                <div
+                  class="float-end text-sm-end"
+                >
+                  <button
+                    class="EditableTodo-toggle btn-link btn btn-sm"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
+                  >
+                    Del
+                  </button>
+                </div>
+                <div
+                  class="Todo"
+                  id="2"
+                >
+                  <div>
+                    <b>
+                      Test2
+                    </b>
+
+                    <small>
+                      Priority:
+                      3
+                    </small>
+                  </div>
+                  <div>
+                    <small>
+                      desc2
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="EditableTodo"
+            >
+              <div
+                class="mb-3"
+              >
+                <div
+                  class="float-end text-sm-end"
+                >
+                  <button
+                    class="EditableTodo-toggle btn-link btn btn-sm"
+                  >
+                    Edit
+                  </button>
+                  <button
+                    class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
+                  >
+                    Del
+                  </button>
+                </div>
+                <div
+                  class="Todo"
+                  id="3"
+                >
+                  <div>
+                    <b>
+                      Test3
+                    </b>
+
+                    <small>
+                      Priority:
+                      2
+                    </small>
+                  </div>
+                  <div>
+                    <small>
+                      desc3
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6"
+          >
+            <section
+              class="mb-4"
+            >
+              <h3>
+                Top Todo
+              </h3>
+              <div
+                class="Todo"
+                id="1"
+              >
+                <div>
+                  <b>
+                    Test1
+                  </b>
+
+                  <small>
+                    Priority:
+                    1
+                  </small>
+                </div>
+                <div>
+                  <small>
+                    desc
+                  </small>
+                </div>
+              </div>
+            </section>
+            <section>
+              <h3
+                class="mb-3"
+              >
+                Add Nü
+              </h3>
+              <form
+                class="NewTodoForm"
+              >
+                <div
+                  class="mb-3"
+                >
+                  <input
+                    aria-label="Title"
+                    class="form-control"
+                    id="newTodo-title"
+                    name="title"
+                    placeholder="Title"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="mb-3"
+                >
+                  <textarea
+                    aria-label="Description"
+                    class="form-control"
+                    id="newTodo-description"
+                    name="description"
+                    placeholder="Description"
+                  />
+                </div>
+                <div
+                  class="mb-3 d-flex justify-content-between"
+                >
+                  <div
+                    class="w-75 d-flex justify-content-between"
+                  >
+                    <label
+                      class="d-inline-flex"
+                      for="newTodo-priority"
+                    >
+                      Priority:  
+                    </label>
+                    <select
+                      class="form-control form-control-sm d-inline-flex"
+                      id="newTodo-priority"
+                      name="priority"
+                    >
+                      <option
+                        value="1"
+                      >
+                        Ultra-Über
+                      </option>
+                      <option
+                        value="2"
+                      >
+                        Über
+                      </option>
+                      <option
+                        value="3"
+                      >
+                        Meh
+                      </option>
+                    </select>
+                  </div>
+                  <button
+                    class="btn-primary rig btn btn-sm NewTodoForm-addBtn"
+                  >
+                    Gø!
+                  </button>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <main
+      class="TodoApp"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-6"
+        >
+          <h3
+            class="mb-3"
+          >
+            Todos
+          </h3>
+          <div
+            class="EditableTodo"
+          >
+            <div
+              class="mb-3"
+            >
+              <div
+                class="float-end text-sm-end"
+              >
+                <button
+                  class="EditableTodo-toggle btn-link btn btn-sm"
+                >
+                  Edit
+                </button>
+                <button
+                  class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
+                >
+                  Del
+                </button>
+              </div>
+              <div
+                class="Todo"
+                id="1"
+              >
+                <div>
+                  <b>
+                    Test1
+                  </b>
+
+                  <small>
+                    Priority:
+                    1
+                  </small>
+                </div>
+                <div>
+                  <small>
+                    desc
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="EditableTodo"
+          >
+            <div
+              class="mb-3"
+            >
+              <div
+                class="float-end text-sm-end"
+              >
+                <button
+                  class="EditableTodo-toggle btn-link btn btn-sm"
+                >
+                  Edit
+                </button>
+                <button
+                  class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
+                >
+                  Del
+                </button>
+              </div>
+              <div
+                class="Todo"
+                id="2"
+              >
+                <div>
+                  <b>
+                    Test2
+                  </b>
+
+                  <small>
+                    Priority:
+                    3
+                  </small>
+                </div>
+                <div>
+                  <small>
+                    desc2
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="EditableTodo"
+          >
+            <div
+              class="mb-3"
+            >
+              <div
+                class="float-end text-sm-end"
+              >
+                <button
+                  class="EditableTodo-toggle btn-link btn btn-sm"
+                >
+                  Edit
+                </button>
+                <button
+                  class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
+                >
+                  Del
+                </button>
+              </div>
+              <div
+                class="Todo"
+                id="3"
+              >
+                <div>
+                  <b>
+                    Test3
+                  </b>
+
+                  <small>
+                    Priority:
+                    2
+                  </small>
+                </div>
+                <div>
+                  <small>
+                    desc3
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-6"
+        >
+          <section
+            class="mb-4"
+          >
+            <h3>
+              Top Todo
+            </h3>
+            <div
+              class="Todo"
+              id="1"
+            >
+              <div>
+                <b>
+                  Test1
+                </b>
+
+                <small>
+                  Priority:
+                  1
+                </small>
+              </div>
+              <div>
+                <small>
+                  desc
+                </small>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3
+              class="mb-3"
+            >
+              Add Nü
+            </h3>
+            <form
+              class="NewTodoForm"
+            >
+              <div
+                class="mb-3"
+              >
+                <input
+                  aria-label="Title"
+                  class="form-control"
+                  id="newTodo-title"
+                  name="title"
+                  placeholder="Title"
+                  value=""
+                />
+              </div>
+              <div
+                class="mb-3"
+              >
+                <textarea
+                  aria-label="Description"
+                  class="form-control"
+                  id="newTodo-description"
+                  name="description"
+                  placeholder="Description"
+                />
+              </div>
+              <div
+                class="mb-3 d-flex justify-content-between"
+              >
+                <div
+                  class="w-75 d-flex justify-content-between"
+                >
+                  <label
+                    class="d-inline-flex"
+                    for="newTodo-priority"
+                  >
+                    Priority:  
+                  </label>
+                  <select
+                    class="form-control form-control-sm d-inline-flex"
+                    id="newTodo-priority"
+                    name="priority"
+                  >
+                    <option
+                      value="1"
+                    >
+                      Ultra-Über
+                    </option>
+                    <option
+                      value="2"
+                    >
+                      Über
+                    </option>
+                    <option
+                      value="3"
+                    >
+                      Meh
+                    </option>
+                  </select>
+                </div>
+                <button
+                  class="btn-primary rig btn btn-sm NewTodoForm-addBtn"
+                >
+                  Gø!
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
