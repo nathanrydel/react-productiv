@@ -43,7 +43,7 @@ function TodoApp({ initialTodos }) {
     <main className="TodoApp">
       <div className="row">
         <div className="col-md-6">
-        <h3 className="mb-3">Todos</h3>
+          <h3 className="mb-3">Todos</h3>
           {todos.length > 0 &&
             <EditableTodoList
               todos={todos}
@@ -60,12 +60,18 @@ function TodoApp({ initialTodos }) {
         </div>
 
         <div className="col-md-6">
-          {todos.length > 0 &&
-            <section className="mb-4">
-              <h3>Top Todo</h3>
+          <section className="mb-4">
+            <h3>Top Todo</h3>
+            {todos.length > 0 &&
               <TopTodo todos={todos} />
-            </section>
-          }
+            }
+            {todos.length === 0 &&
+              <span
+                className="text-muted">
+                No todos yet!
+              </span>
+            }
+          </section>
 
           <section>
             <h3 className="mb-3">Add Nü</h3>
