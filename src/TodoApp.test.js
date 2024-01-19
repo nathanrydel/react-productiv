@@ -34,8 +34,32 @@ describe("Rendering TodoApp with content", function () {
     const result = render(<TodoApp initialTodos={TODOS} />)
 
     expect(result).toMatchSnapshot();
-  })
-})
+  });
+});
 
 // Renders Todos area with message You have no todos and TopTodo with No todos yet!
 // Snapshot of No Todos
+
+
+describe("Rendering ToDoApp with no content", function () {
+  tests("Todos area without todos", function () {
+    const result = render(<TodoApp initialTodos={[]}/>);
+
+    expect(result.queryByText("Todos")).toBeInTheDocument();
+    expect(result.queryByText("You have no todos")).toBeInTheDocument();
+    expect(result.queryByText("No todos yet!")).toBeInTheDocument();
+    expect(result.queryByText("Test1")).not.toBeInTheDocument();
+    expect(result.queryByText("Test2")).not.toBeInTheDocument();
+    expect(result.queryByText("Test3")).not.toBeInTheDocument();
+  });
+
+  // Snapshot of rendered Todos (no todos)
+  test("matches snapshot of correct result", function () {
+    const result = render(<TodoApp initialTodos={[]} />)
+
+    expect(result).toMatchSnapshot();
+  });
+});
+
+
+
