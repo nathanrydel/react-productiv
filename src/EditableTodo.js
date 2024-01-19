@@ -15,6 +15,8 @@ import TodoForm from "./TodoForm";
 function EditableTodo({ todo, update, remove }) {
   const [isEditing, setIsEditing] = useState(false);
 
+  console.log('Editable todo', todo);
+
   /** Toggle if this is being edited */
   function toggleEdit() {
     setIsEditing(editable => !editable);

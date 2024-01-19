@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
 
 import TopTodo from "./TopTodo";
+import TodoForm from "./TodoForm";
 import EditableTodoList from "./EditableTodoList";
 
 /** App for managing a todo list.
@@ -15,8 +16,10 @@ import EditableTodoList from "./EditableTodoList";
  * App -> TodoApp -> { TodoForm, EditableTodoList }
  */
 
-function TodoApp({ inititalTodos }) {
-  const [todos, setTodos] = useState(inititalTodos);
+function TodoApp({ initialTodos }) {
+  const [todos, setTodos] = useState(initialTodos);
+
+  console.log('TodoApp renders: ', todos, initialTodos);
 
   /** add a new todo to list */
   function create(newTodo) {
