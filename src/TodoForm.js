@@ -14,7 +14,7 @@ const DEFAULT_FORM_DATA = { title: "", description: "", priority: 1 };
  * { TodoApp, EditableTodo } -> TodoForm
  */
 
-function TodoForm({ initialFormData = defaultFormData, handleSave }) {
+function TodoForm({ initialFormData = DEFAULT_FORM_DATA, handleSave }) {
   const [formData, setFormData] = useState(initialFormData);
 
   console.log("TodoForm renders: ", formData);
@@ -22,10 +22,17 @@ function TodoForm({ initialFormData = defaultFormData, handleSave }) {
   /** Update form input. */
   function handleChange(evt) {
     const field = evt.target;
-    field.name === "priority" ? +field.value : field.value;
     setFormData(fData => ({
       ...fData,
       [field.name]: field.value
+    }));
+  }
+
+  function handleNumericChange(evt) {
+    const field = evt.target;
+    setFormData(fData => ({
+      ...fData,
+      [field.name]: Number(field.value)
     }));
   }
 
@@ -71,7 +78,7 @@ function TodoForm({ initialFormData = defaultFormData, handleSave }) {
           <select id="newTodo-priority"
             name="priority"
             value={formData.priority}
-            onChange={handleChange}
+            onChange={handleNumericChange}
             className="form-control form-control-sm d-inline-flex"
           >
             <option value={1}>Ultra-Über</option>
