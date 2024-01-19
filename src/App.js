@@ -8,7 +8,7 @@ import "./App.css";
  *
  * Passes initialTodos: [{ id, title, description, priority }, ...] to TodoApp
  *
- * App -> TodoApp
+ * App -> { TodoApp, Footer }
  **/
 
 function App() {

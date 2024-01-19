@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const defaultFormData = { title: "", description: "", priority: 1 };
+const DEFAULT_FORM_DATA = { title: "", description: "", priority: 1 };
 
 /** Form for adding.
  *
@@ -9,7 +9,7 @@ const defaultFormData = { title: "", description: "", priority: 1 };
  * - handleSave: function to call in parent.
  *
  * State:
- * - formData
+ * - formData: title, description, priority fields
  *
  * { TodoApp, EditableTodo } -> TodoForm
  */
@@ -20,12 +20,12 @@ function TodoForm({ initialFormData = defaultFormData, handleSave }) {
   console.log("TodoForm renders: ", formData);
 
   /** Update form input. */
-  // TODO: handle the formData being a string, but priority expecting a number
   function handleChange(evt) {
-    const change = evt.target;
+    const field = evt.target;
+    field.name === "priority" ? +field.value : field.value;
     setFormData(fData => ({
       ...fData,
-      [change.name]: change.value
+      [field.name]: field.value
     }));
   }
 
@@ -33,8 +33,8 @@ function TodoForm({ initialFormData = defaultFormData, handleSave }) {
   function handleSubmit(evt) {
     evt.preventDefault();
     handleSave(formData);
-    setFormData({ title: "", description: "", priority: 1 });
-  } // TODO: priority type num instead of type str here ^
+    setFormData(DEFAULT_FORM_DATA);
+  }
 
   return (
     <form className="NewTodoForm" onSubmit={handleSubmit}>
